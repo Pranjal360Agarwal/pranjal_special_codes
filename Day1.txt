@@ -1,0 +1,34 @@
+Day - 1
+
+#codechef
+
+#Secret Recipe
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() 
+{
+	long double t, X1, X2, X3, V1, V2, t1, t2, d1, d2;
+	cin >> t;
+	while(t--) 
+      {
+	    cin >> X1 >> X2 >> X3 >> V1 >> V2;
+	    d1 = abs(X1-X3);
+	    d2 = abs(X3-X2);
+	    t1 = d1/V1;
+	    t2 = d2/V2;
+
+	    if(t1 < t2) 
+          cout << "Chef\n";
+
+	    else if(t2 < t1) 
+          cout << "Kefa\n";
+
+	    else 
+          cout << "Draw\n";
+	}
+
+	return 0;
+}
